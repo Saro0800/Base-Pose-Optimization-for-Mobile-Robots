@@ -3,8 +3,8 @@ import rospy
 import math
 import time
 
-from opt_problem.problem_formulation import EllipsoidEquationOptProblem
-from generate_pointcloud.gen_cloud_GUI import GenereatePointCloud
+from reach_space_modeling.opt_problem.problem_formulation import EllipsoidEquationOptProblem
+from reach_space_modeling.generate_pointcloud.gen_cloud_GUI import GenereatePointCloud
 
 from pymoo.core.population import Population
 from pymoo.algorithms.soo.nonconvex.pattern import PatternSearch
