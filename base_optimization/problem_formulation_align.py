@@ -34,8 +34,8 @@ class BasePoseOptProblem(ElementwiseProblem):
         super().__init__(n_var=3,
                          n_obj=1,
                          n_ieq_constr=2,
-                         xl=np.array([-1000, -1000, -np.pi/2]),
-                         xu=np.array([1000, 1000, np.pi/2]))
+                         xl=np.array([-1000, -1000, 0]),
+                         xu=np.array([1000, 1000, np.pi*2]))
 
     def _evaluate(self, x, out, *args, **kwargs):
         # retrieve the ellipsoid equation equation paramters

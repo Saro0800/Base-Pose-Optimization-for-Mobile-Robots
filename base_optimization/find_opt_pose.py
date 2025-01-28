@@ -74,7 +74,7 @@ ell_axis = np.array([a, b, c])
 # define the desired pose of the end-effector with respect to
 # the reference frame of the last joint of the arm
 des_pos = np.array([1, -2, 0.1, np.deg2rad(0),
-                   np.deg2rad(0), np.deg2rad(30)])
+                   np.deg2rad(0), np.deg2rad(150)])
 
 # define the optimization problem to find the optimal base pose
 problem = BasePoseOptProblem(ell_center, ell_axis, des_pos, point_cloud, False)

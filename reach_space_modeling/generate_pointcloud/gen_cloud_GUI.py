@@ -1,3 +1,4 @@
+import os
 import tkinter as tk
 import urdfpy
 import numpy as np
@@ -70,7 +71,7 @@ class GenereatePointCloud:
 
     def select_urdf_file(self):
         # select the desired URDF using the dialog window
-        self.urdf_file_path = filedialog.askopenfilename()
+        self.urdf_file_path = filedialog.askopenfilename(initialdir=os.path.abspath(os.path.dirname(__file__)))
         if self.urdf_file_path and self.urdf_file_path[-5:] == ".urdf":
             # write the path in the search bar
             self.urdf_path_entry.delete(0, tk.END)
